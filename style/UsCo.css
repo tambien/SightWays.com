@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Chicle|Codystar|Arimo:400,700,400italic,700italic|Carrois+Gothic|Carrois+Gothic+SC|Faster+One);
+@import url(http://fonts.googleapis.com/css?family=Salsa);
+#Background0 {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #d68a75;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d68a75 0%, #8fb6d6 50%, #a17ea8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d68a75), color-stop(50%, #8fb6d6), color-stop(100%, #a17ea8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d68a75 0%, #8fb6d6 50%, #a17ea8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d68a75 0%, #8fb6d6 50%, #a17ea8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d68a75 0%, #8fb6d6 50%, #a17ea8 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d68a75 0%, #8fb6d6 50%, #a17ea8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d68a75', endColorstr='#a17ea8',GradientType=0 );
+  /* IE6-9 */ }
+
+#Background1 {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #c9be6a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c9be6a 0%, #7dc684 50%, #7db9e8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c9be6a), color-stop(50%, #7dc684), color-stop(100%, #7db9e8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c9be6a 0%, #7dc684 50%, #7db9e8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c9be6a 0%, #7dc684 50%, #7db9e8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c9be6a 0%, #7dc684 50%, #7db9e8 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c9be6a 0%, #7dc684 50%, #7db9e8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9be6a', endColorstr='#7db9e8',GradientType=0 );
+  /* IE6-9 */ }
+
+a {
+  text-decoration: none; }
+
+#CenterLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  margin-top: -130px;
+  margin-left: -130px;
+  background: url("./images/sphynxeye.jpg");
+  background-size: 260px 260px;
+  border-radius: 130px; }
+
+#CenterLogo #Company {
+  position: absolute;
+  top: 154px;
+  left: 0px;
+  font-family: 'Salsa', cursive;
+  font-size: 49px;
+  text-align: center;
+  color: white;
+  width: 100%; }
+
+#CenterLogo #TM {
+  position: absolute;
+  top: 156px;
+  right: -2px;
+  font-family: 'Salsa', cursive;
+  font-size: 14px;
+  text-align: center;
+  color: white; }
+
+#CenterLogo #Slogan {
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 100%;
+  color: white; }
+
+/*=============================================================================
+TOP BAR
+=============================================================================*/
+#TopBar {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  overflow: visible; }
+
+#TopBar div {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-family: 'Faster One', cursive;
+  font-size: 20px;
+  float: left;
+  cursor: pointer;
+  color: black;
+  text-align: center; }
+
+#TopBar a:hover {
+  color: white; }
+
+/*=============================================================================
+CHOICES
+=============================================================================*/
+#Choices {
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+#Choices .Topics {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 50%; }
+
+#Choices .Topics #Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -150px; }
+
+#Choices .Topics #Content img {
+  width: 300px;
+  height: 100px;
+  background-color: blue; }
+
+#Choices .Topics #Content div {
+  color: black;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Salsa', cursive; }
+
+#Choices #OtherEyes #Content {
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg); }
+
+#Choices #OtherEyes #Content:hover {
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg); }
+
+#Choices #Decisions #Content {
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg); }
+
+#Choices #Decisions #Content:hover {
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg); }
+
+#Choices #Interpersonal #Content {
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg); }
+
+#Choices #Interpersonal #Content:hover {
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg); }
+
+#Choices #DontSee #Content {
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg); }
+
+#Choices #DontSee #Content:hover {
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg); }
+
+/*=============================================================================
+ PAGE CONTENT
+=============================================================================*/
+#PageContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -300px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px; }
+
+#Footer {
+  font-family: 'Salsa', cursive;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%; }
+
+/*=============================================================================
+ ANIMALS
+=============================================================================*/
+#HippoImage {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-left: 100px; }
+
+#HippoImage #Container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  top: 0px; }
+
+#HippoImage #Container div {
+  position: absolute;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/hippo.jpg");
+  background-size: 400px 400px; }
+
+#HippoImage #Hippo {
+  top: 0px;
+  right: 0px;
+  background-position: 211px 0px; }
+
+#HippoImage #Dog {
+  background-image: url("./images/dog.jpg");
+  background-size: 100px 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px; }
+
+#HippoImage #Kids {
+  top: 82px;
+  left: 0px;
+  background-position: -17px -79px; }
