@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Chicle|Codystar|Arimo:400,700,400italic,700italic|Carrois+Gothic|Carrois+Gothic+SC|Faster+One);
 @import url(http://fonts.googleapis.com/css?family=Salsa);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
 
 @mixin topLeft {
 	position: absolute;
@@ -50,6 +51,14 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9be6a', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
+#Background2 {
+	z-index: -1;
+	@include topLeft;
+	@include hundredPercent;
+	background: url("./images/ways_of_seeing.gif");
+	background-size: 400px 300px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -65,8 +74,8 @@ a {
 	position: absolute;
 	top: 154px;
 	left: 0px;
-	font-family: 'Salsa', cursive;
-	font-size: 49px;
+	font-family: 'Alegreya Sans SC', cursive;
+	font-size: 56px;
 	text-align: center;
 	color: white;
 	width: 100%;
@@ -144,9 +153,9 @@ CHOICES
 	@include centeredAbsolute(300px, 200px);
 }
 
-#Choices .Topics #Content img{
+#Choices .Topics #Content #Imgage{
 	width: 300px;
-	height: 100px;
+	height: 200px;
 	background-color: blue;
 }
 
@@ -158,54 +167,56 @@ CHOICES
 	font-family: 'Salsa', cursive;
 }
 
-$ContentRotationAmount : 20deg;
-
-#Choices #OtherEyes #Content{
-	transform:rotate(-$ContentRotationAmount);
-	-ms-transform:rotate(-$ContentRotationAmount); 
-	-webkit-transform:rotate(-$ContentRotationAmount); 
+#Choices .TopRow{
+	z-index: 1;
 }
 
-#Choices #OtherEyes #Content:hover{
-	transform:rotate($ContentRotationAmount);
-	-ms-transform:rotate($ContentRotationAmount); 
-	-webkit-transform:rotate($ContentRotationAmount); 
+$ChoiceNames : OtherEyes Decisions Interpersonal DontSee;
+$ChoiceDirection : -1 1 -1 1;
+
+$ContentRotationAmount : 19deg;
+
+@for $i from 1 through 4 {
+	$DivId : nth($ChoiceNames, $i);
+	$amnt : nth($ChoiceDirection, $i);
+
+	#Choices ##{$DivId} #Content {
+		transform:rotate($amnt * $ContentRotationAmount);
+		-ms-transform:rotate($amnt * $ContentRotationAmount); 
+		-webkit-transform:rotate($amnt * $ContentRotationAmount);
+		text-shadow: 2px 2px 6px #777; 
+	}
+	#Choices  ##{$DivId} #Content:hover{
+		transform:rotate(-1 * $amnt * $ContentRotationAmount);
+		-ms-transform:rotate(-1 * $amnt * $ContentRotationAmount); 
+		-webkit-transform:rotate(-1 * $amnt * $ContentRotationAmount); 
+	}
+	#Choices  ##{$DivId} #Image{
+		width: 300px;
+		height: 200px;
+		-webkit-box-shadow: 2px 2px 6px 2px #777;
+		box-shadow: 2px 2px 6px 2px #777;
+	}
 }
 
-#Choices #Decisions #Content{
-	transform:rotate($ContentRotationAmount);
-	-ms-transform:rotate($ContentRotationAmount); 
-	-webkit-transform:rotate($ContentRotationAmount); 
+#Choices #OtherEyes #Image {
+	background: url("./images/receiving_gaze.gif");
+	background-size: 300px 200px;
 }
 
-#Choices #Decisions #Content:hover{
-	transform:rotate(-$ContentRotationAmount);
-	-ms-transform:rotate(-$ContentRotationAmount); 
-	-webkit-transform:rotate(-$ContentRotationAmount); 
+#Choices #Decisions #Image {
+	background: url("./images/infinite_scroll.gif");
+	background-size: 300px 200px;
 }
 
-#Choices #Interpersonal #Content{
-	transform:rotate($ContentRotationAmount);
-	-ms-transform:rotate($ContentRotationAmount); 
-	-webkit-transform:rotate($ContentRotationAmount); 
+#Choices #Interpersonal #Image {
+	background: url("./images/silloheuttes_on_pastel_beach.gif");
+	background-size: 300px 200px;
 }
 
-#Choices #Interpersonal #Content:hover{
-	transform:rotate(-$ContentRotationAmount);
-	-ms-transform:rotate(-$ContentRotationAmount); 
-	-webkit-transform:rotate(-$ContentRotationAmount); 
-}
-
-#Choices #DontSee #Content{
-	transform:rotate(-$ContentRotationAmount);
-	-ms-transform:rotate(-$ContentRotationAmount); 
-	-webkit-transform:rotate(-$ContentRotationAmount); 
-}
-
-#Choices #DontSee #Content:hover{
-	transform:rotate($ContentRotationAmount);
-	-ms-transform:rotate($ContentRotationAmount); 
-	-webkit-transform:rotate($ContentRotationAmount); 
+#Choices #DontSee #Image {
+	background: url("./images/the_unseen.gif");
+	background-size: 300px 200px;
 }
 
 /*=============================================================================
